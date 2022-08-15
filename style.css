@@ -19,6 +19,7 @@ font-family: 'Poppins', sans-serif;
 
 .container {
   background-color: #111111;
+  font-size: 1rem;
 }
 
 /* ----------------------Navigation section--------------------- */
@@ -145,13 +146,17 @@ nav {
   .home-content{
     font-size: 0.5rem;
     margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
   }
   .home-content h3 {
     font-size: 1rem;
   }
   .home-content h1 {
-    font-size: 2.5rem !important;
-    line-height: 1.4;
+    font-size: 2.3rem ;
+    line-height: 1.2;
+    
   }
   .home-content p {
     font-size: 1.1rem;
@@ -164,14 +169,18 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 1em;
   }
-  .home-content h1{
-    margin-bottom: 0.5em;
+
+  .home-content-box{
+    margin: 0 ;
+    width: 100%;
   }
-  .btn{
-    margin-bottom: 1em;
-    font-size: 1.8em !important;
+  .home-content{
+    display: block;
+    padding: 0em 1em;
   }
+  
 }
 
 
@@ -400,40 +409,32 @@ nav {
 
 .feature-button {
   background-color: #FF3343;
-  margin-top: 1em !important;
-  padding: 1em 2em !important;
+  margin-top: 1em ;
+  padding: 1em 2em ;
   text-align: center;
-  font-size: 1em !important;
-  max-width: 200px;
+  font-size: 1em;
 }
 
 
 @media  screen and (max-width:1000px) {
-  .feature-top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  
+  .features-section{
     text-align: center;
   }
 
+  .feature-top{
+    flex-direction: column;
+    padding: 0 1em;
+  }
+
   .features-heading{
-    width: 100%;
-    margin: 0.5em 0;
-    padding: 0;
+    margin: 0.5em 1em;
+    padding: 0 1em;
   }
 
 }
 
-@media  screen and (max-width:500px){
-  
-  .features-heading{
-    width: 210%;
-  }
-  .features-heading h2{
-    font-size: 1.5rem ;
-  }
-  
-}
+
 
 
 
@@ -448,7 +449,7 @@ nav {
   grid-template-rows: 1fr 1fr;
   place-content:center;
   row-gap: 1em;
-  column-gap: 3.5em;
+  column-gap: 5.5em;
   margin: 2em 10em;
   
 }
@@ -509,7 +510,7 @@ nav {
 .contact-content {
   padding: 5em;
   color: #ffff;
-  background-color: red;
+  /* background-color: red; */
   max-width: 800px;
 }
 
@@ -540,7 +541,20 @@ nav {
   .contact-button{
     margin:1em auto;
   }
+  
+  .contact-content{
+    padding: 2em;
+  }
+  .contact-content h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-content p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
 }
+
 
 
 
